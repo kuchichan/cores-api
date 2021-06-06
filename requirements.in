@@ -1,0 +1,4 @@
+fastapi
+rocket-cores/
+sqlalchemy
+psycopg2

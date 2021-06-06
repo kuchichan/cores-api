@@ -1,0 +1,3 @@
+[submodule "rocket-cores"]
+	path = rocket-cores
+	url = https://github.com/kuchichan/rocket-cores
