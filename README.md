@@ -9,13 +9,15 @@ git submodule update
 2. build & run docker compose
 ``` console
 docker-compose --env-file=.env.example build
-docker-compose --env-file=.env.example up 
+docker-compose --env-file=.env.example up --detach 
 ```
 3. To populate `users` and `cores` in database run:
 ``` console
 docker-compose --env-file=.env.example run --rm  core-api python load_users.py
 docker-compose --env-file=.env.example run --rm  core-api python load_cores.py
 ```
+You do not have to populate cores - if the database does not contain cores, it will be fetched during the get (it takes time). 
+
 4. You can navigate api via http://127.0.0.1:8000/docs
 
 ### NOTE:
